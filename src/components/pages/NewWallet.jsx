@@ -70,6 +70,7 @@ export default function NewWallet() {
 
       // create wallet and store in local storage
       const { publicKey, privateKey } = generateWallet(phrase);
+      console.log("private key :", privateKey);
       localStorage.setItem("publicKey", publicKey);
       const encryptedPrivateKey = CryptoJS.AES.encrypt(
         privateKey,

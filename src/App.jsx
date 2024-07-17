@@ -1,4 +1,3 @@
-import "./App.css";
 import { generateMnemonic, generateWallet } from "./wallet";
 import HomePage from "./components/pages/HomePage";
 import { Route, Routes } from "react-router-dom";

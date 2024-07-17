@@ -5,12 +5,12 @@
  */
 
 // import Footer from "../Footer";
-// import Navbar from "../Navbar";
+import Navbar from "../Navbar.jsx";
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col min-h-[100dvh]">
-      {/* <Navbar /> */}
+    <div className="flex w-full flex-col min-h-[100dvh]">
+      <Navbar />
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
           <div className="container px-4 md:px-6">

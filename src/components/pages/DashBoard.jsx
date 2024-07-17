@@ -80,11 +80,15 @@ const DashBoard = () => {
       <Navbar />
       <div className="container min-h-screen mx-auto p-4">
         <h1 className="text-2xl font-bold mb-4">Dashboard</h1>
+
+        <p className="text-red-600">
+          The wallet supports only sepolia blockchain as of now*
+        </p>
         <div className="flex items-center">
           <p className="break-all">Address: {address}</p>
           <button
             onClick={() => copyToClipboard(address)}
-            className="ml-2 bg-blue-500 text-white px-2 py-1 rounded-md"
+            className="ml-2 bg-blue-500 text-white px-2 py-1 rounded-xl"
           >
             Copy
           </button>
@@ -93,7 +97,7 @@ const DashBoard = () => {
           <p className="break-all">Private Key: {decryptedPrivateKey}</p>
           <button
             onClick={() => copyToClipboard(decryptedPrivateKey)}
-            className="ml-2 bg-blue-500 text-white px-2 py-1 rounded-md"
+            className="ml-2 bg-blue-500 text-white px-2 py-1 rounded-xl"
           >
             Copy
           </button>

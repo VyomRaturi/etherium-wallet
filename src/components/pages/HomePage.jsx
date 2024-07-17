@@ -4,7 +4,7 @@
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
 
-// import Footer from "../Footer";
+import Footer from "../Footer.jsx";
 import Navbar from "../Navbar.jsx";
 
 export default function HomePage() {
@@ -230,7 +230,7 @@ export default function HomePage() {
           </div>
         </section>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

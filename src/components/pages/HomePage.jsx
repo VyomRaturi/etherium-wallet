@@ -21,7 +21,11 @@ export default function HomePage() {
                   </p>
                   <div className="mt-8">
                     <a
-                      href="get-started"
+                      href={
+                        localStorage.getItem("publicKey")
+                          ? "/dashboard"
+                          : "/get-started"
+                      }
                       className="py-2 rounded-2xl items-center justify-center bg-primary px-10 text-xl font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                     >
                       Get Started

@@ -5,6 +5,7 @@ import CryptoJS from "crypto-js";
 const DashBoard = () => {
   const encryptedPrivateKey = localStorage.getItem("encryptedPrivateKey");
 
+  // decrypt the private key
   const bytes = CryptoJS.AES.decrypt(
     encryptedPrivateKey,
     import.meta.env.VITE_WALLET_CREATION_SECRET

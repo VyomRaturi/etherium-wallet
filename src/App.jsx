@@ -1,6 +1,7 @@
 import { generateMnemonic, generateWallet } from "./wallet";
 import HomePage from "./components/pages/HomePage";
 import { Route, Routes } from "react-router-dom";
+import GetStarted from "./components/pages/GetStarted";
 
 function App() {
   const phrase = generateMnemonic();
@@ -14,9 +15,9 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      {/* <Route path="/get-started" element={<GetStarted />} />
-      <Route path="/new-wallet" element={<NewWallet />} />
-      <Route path="/dashboard" element={<DashBoard />} /> */}
+      <Route path="/get-started" element={<GetStarted />} />
+      {/* <Route path="/new-wallet" element={<NewWallet />} /> */}
+      {/* <Route path="/dashboard" element={<DashBoard />} /> */}
     </Routes>
   );
 }

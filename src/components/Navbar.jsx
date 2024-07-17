@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
     <header className="px-4 lg:px-6 h-14 flex items-center">
-      <a href="#" className="flex items-center justify-center">
+      <a href="/" className="flex items-center justify-center">
         <EclipseIcon className="h-6 w-6" />
         <span className="sr-only">Ethereum Wallet</span>
       </a>
